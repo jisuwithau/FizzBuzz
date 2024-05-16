@@ -1,11 +1,19 @@
 /**
  * Solve the FizzBuzz challenge.
+ * #1 and == &&
+ * #2 for (...){}
+ * #3 no indentation in for loop, instead uses {}
+ * #4 put variable type in front of the variable name
+ * #5 put "public static void" in front of the methods
+ * #6 System.out.println("Fizz") instead of print()
+ * #7 i++ instead of i =+ 1
  */
 class FizzBuzz {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i < 100; i++) {
+        int i = 1;
+        while (i < 100) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
@@ -29,6 +37,7 @@ class FizzBuzz {
                 System.out.println(i);
 
             }
+            i++;
         }
     }
 }
